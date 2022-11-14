@@ -1,52 +1,91 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
-*{
+* {
     font-family: 'Roboto', sans-serif;
 }
+
 /*-------------------------------------------Color*/
-.bg-color-name-title{
+.bg-color-name-title {
     background-color: gray;
 }
 
-.ui-menu-color-home{
+.color-three-reasons{
+    background-color: #fff;
+}
+.ui-menu-color-home {
     background-color: orange;
 }
-.ui-menu-color-resume{
+
+.ui-menu-color-resume {
     background-color: purple;
 }
-.ui-menu-color-contact{
+
+.ui-menu-color-contact {
     background-color: blue;
 }
-.ui-menu-color-download{
+
+.ui-menu-color-download {
     background-color: black;
 }
-/*-------------------------------------------Heading*/
-header{
+/*-------------------------------------------Special paddings/ margins text*/
+h1,h2,h3,h4{
     margin: 0;
 }
 
-.heading{
+.uppercase{
+    text-transform: uppercase;
+}
+
+.general-sub{
+    font-weight: 300;
+    color: #fafafa;
+}
+.inline-block{
+    display: inline-block;
+}
+.row-table{
+    display: table;
+}
+
+.section-column {
+    display: table-cell;
+    padding: 0 30px 30px;
+    float: none;
+}
+
+.section-heading{
+    font-weight: 300;
+    margin-top: 25px;
+    margin-bottom: 40px;
+}
+
+/*-------------------------------------------Heading*/
+header {
+    margin: 0;
+}
+
+.heading {
     margin-left: 50px;
 }
 
-.logo{
+.logo {
     background: url("../images/rosie.jpg") no-repeat center center;
     background-size: cover;
     min-height: 360px;
     transition: all .5s ease-in-out;
     -moz-transition: all .5s ease-in-out;
     -webkit-transition: all .5s ease-in-out;
-    
+
 }
 
-.name{
+.name {
     font-weight: 100;
     font-size: 46px;
     margin-top: 50px;
     color: #fff;
 }
 
-.title{
+.title {
     font-weight: 300;
     font-size: 28px;
     margin-top: 20px;
@@ -54,11 +93,11 @@ header{
     color: #fff;
 }
 
-.list-inline-item:not(:last-child){
+.list-inline-item:not(:last-child) {
     margin: 0;
 }
 
-.menucontainer{
+.menucontainer {
     font-size: 0;
 }
 
@@ -67,27 +106,27 @@ header{
     padding: 0;
 }
 
-.menuitem{
+.menuitem {
     height: 120px;
     text-align: center;
     padding: 0;
 }
 
-.menuitem a{
+.menuitem a {
     width: 100%;
     text-decoration: none;
     color: #fff;
     height: 120px;
 }
 
-.menuitem a i{
+.menuitem a i {
     padding-top: 22px;
     display: block;
     color: #fff;
     font-size: 26px;
 }
 
-.menuitem span{
+.menuitem span {
     display: block;
     width: 100%;
     padding-top: 5px;
@@ -98,6 +137,65 @@ header{
     letter-spacing: 2px;
 }
 
-#nav{
+#nav {
     margin: 0;
+}
+
+/*-------------------------------------------Hover css*/
+.hvr-sweep-to-bottom::before {
+    background: rgba(0, 0, 0, 0.2);
+    height: 120px;
+}
+
+/*-------------------------------------------footer*/
+
+footer{
+    background-color: #525252;
+    color: #fafafa;
+    min-height: 120px;
+    margin: 0;
+}
+
+.cv-pdf{
+    font-size: 18px;
+    color: #fafafa;
+    text-align: center;
+    padding-left: 5px;
+    transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+    
+}
+
+.cv-pdf:hover{
+    color: red;
+}
+
+.social-links{
+    padding-bottom: 15px;
+}
+
+.social-links li a i{
+    width: 32px;
+    height: 32px;
+    padding: 12px 0;
+    border-radius: 50%;
+    font-size: 13px;
+    line-height: 7px;
+    text-align: center;
+    color: #fafafa;
+    background: #8f8f8f;
+    transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+}
+
+.social-links li a i:hover{
+    background:red;
+}
+
+#footer-details {
+    padding: 20px;
 }
