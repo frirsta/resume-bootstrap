@@ -14,7 +14,7 @@
     background-color: #fff;
 }
 
-.bg-color-contact{
+.bg-color-contact {
     background: #fff;
 }
 
@@ -31,6 +31,14 @@
 }
 
 .ui-menu-color-contact {
+    background-color: #34db71;
+}
+
+.ui-menu-color-interest {
+    background-color: #f15bea;
+}
+
+.ui-menu-color-github {
     background-color: #3498db;
 }
 
@@ -310,29 +318,29 @@ footer {
     background-color: rgba(25, 25, 25, 0.2);
 }
 
-.progress-section{
+.progress-section {
     margin: 40px 20px;
 }
 
 /**/
-.history-heading{
+.history-heading {
     color: #fafafa;
     margin-bottom: 50px;
 }
 
-.timeline-item{
+.timeline-item {
     padding: 4em 2em 0em 2em;
     position: relative;
     color: #fafafa;
     border-left: 1px solid;
 }
 
-.timeline-item p{
+.timeline-item p {
     padding: 0;
     margin: 0;
 }
 
-.timeline-item::before{
+.timeline-item::before {
     content: attr(data-dates);
     position: absolute;
     left: 2.5em;
@@ -345,7 +353,7 @@ footer {
 
 }
 
-.timeline-item::after{
+.timeline-item::after {
     width: 12px;
     height: 12px;
     display: block;
@@ -357,7 +365,7 @@ footer {
     background: #fafafa;
 }
 
-.history-items{
+.history-items {
     margin-bottom: 30px;
 }
 
@@ -365,7 +373,7 @@ footer {
 
 /*-------------*/
 
-.contact-heading{
+.contact-heading {
     font-weight: 300;
     margin-top: 25px;
     margin-bottom: 20px;
@@ -377,7 +385,7 @@ footer {
     max-width: 70%;
 }
 
-button[type="submit"]{
+button[type="submit"] {
     margin-top: 15px;
     color: white;
     background-color: orange;
@@ -385,12 +393,11 @@ button[type="submit"]{
 }
 
 
-@media(min-width: 992px){
-    .center-form{
+@media(min-width: 992px) {
+    .center-form {
         padding-top: 30px;
         min-height: 240px;
         margin: 0 auto;
         max-width: 50%;
     }
 }
-
