@@ -11,6 +11,7 @@
         integrity="sha512-csw0Ma4oXCAgd/d4nTcpoEoz4nYvvnk21a8VA2h2dzhPAvjbUIK6V3si7/g/HehwdunqqW18RwCJKpD7rL67Xg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="assets/css/style.css">
+    
 
     <title>Frirsta</title>
 </head>
@@ -73,7 +74,7 @@
                         </h3>
                     </div>
                 </div>
-                <div id="map">
+                <div id="map" class="map">
 
                 </div>
             </div>
@@ -92,7 +93,8 @@
                             <div class="col-10">
                                 <h4 class="three-reasons-heading uppercase">Coding Grace</h4>
                                 <p>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic dolores et nam est quos nesciunt molestiae voluptas quasi.
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic dolores et nam est quos
+                                    nesciunt molestiae voluptas quasi.
                                 </p>
                             </div>
                         </div>
@@ -105,7 +107,8 @@
                             <div class="col-10">
                                 <h4 class="three-reasons-heading uppercase">Django Girls</h4>
                                 <p>
-                                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, officia esse odio consequatur vel id aspernatur unde voluptatum dolore dicta a minus.
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, officia esse odio
+                                    consequatur vel id aspernatur unde voluptatum dolore dicta a minus.
                                 </p>
                             </div>
                         </div>
@@ -118,7 +121,9 @@
                             <div class="col-10">
                                 <h4 class="three-reasons-heading uppercase">Full Stack Sweden</h4>
                                 <p>
-                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid, iste repellat molestiae modi perferendis neque quod incidunt eligendi labore fuga provident voluptate.
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid, iste repellat
+                                    molestiae modi perferendis neque quod incidunt eligendi labore fuga provident
+                                    voluptate.
                                 </p>
                             </div>
                         </div>
@@ -131,7 +136,9 @@
                             <div class="col-10">
                                 <h4 class="three-reasons-heading uppercase">Developers International</h4>
                                 <p>
-                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid, iste repellat molestiae modi perferendis neque quod incidunt eligendi labore fuga provident voluptate.
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid, iste repellat
+                                    molestiae modi perferendis neque quod incidunt eligendi labore fuga provident
+                                    voluptate.
                                 </p>
                             </div>
                         </div>
@@ -197,22 +204,13 @@
         </div>
 
     </footer>
-    <script>
-       function initMap() {
-        var map = new google.maps.Map(document.getElementById("map"), {
-            zoom: 3,
-            center: {
-                lat: 46.619261,
-                lng: -33.134766
-            }
-        });
-       }
+    <script
+        src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js">
     </script>
-    <script src="https://kit.fontawesome.com/215e1e67e2.js" crossorigin="anonymous"></script>
     <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB-16_v9-We87Ong1qZ-XiwjE7K-B2ZHcw&callback=initMap">
-    
-</script>
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA6Nwe3_I-yqbp20lg85Y73kRZbKP-iX-w&callback=initMap">
+    </script>
+    <script src="assets/js/maps.js"></script>
 </body>
 
 </html>
