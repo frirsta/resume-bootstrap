@@ -63,61 +63,84 @@
             </div>
         </div>
     </header>
-<section>
-    <div class="col-md-8 bg-color-three-reasons section-column">
+    <section class="container-fluid">
         <div class="row">
-            <div class="col">
-                <h3 class="section-heading uppercase">About Me</h3>
+            <div class="col-md-4 bg-color-conference section-column">
+                <div class="row">
+                    <div class="col-12">
+                        <h3 class="section-heading uppercase">
+                            Conference And Meetups Attended
+                        </h3>
+                    </div>
+                </div>
+                <div id="map">
+
+                </div>
+            </div>
+            <div class="col-md-8 bg-color-three-reasons section-column">
+                <div class="row">
+                    <div class="col">
+                        <h3 class="section-heading uppercase">My Groups and Societies</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-10 offset-1 offset-sm-0 col-sm-4 col-md-6">
+                        <div class="row">
+                            <div class="col-2">
+                                <i class="three-reasons-icon fa-solid fa-person-snowboarding" aria-hidden="true"></i>
+                            </div>
+                            <div class="col-10">
+                                <h4 class="three-reasons-heading uppercase">Coding Grace</h4>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic dolores et nam est quos nesciunt molestiae voluptas quasi.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-10 offset-1 offset-sm-0 col-sm-4 col-md-6">
+                        <div class="row">
+                            <div class="col-2">
+                                <i class="three-reasons-icon fa-solid fa-person-snowboarding" aria-hidden="true"></i>
+                            </div>
+                            <div class="col-10">
+                                <h4 class="three-reasons-heading uppercase">Django Girls</h4>
+                                <p>
+                                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, officia esse odio consequatur vel id aspernatur unde voluptatum dolore dicta a minus.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-10 offset-1 offset-sm-0 col-sm-4 col-md-6">
+                        <div class="row">
+                            <div class="col-2">
+                                <i class="three-reasons-icon fa-solid fa-person-snowboarding" aria-hidden="true"></i>
+                            </div>
+                            <div class="col-10">
+                                <h4 class="three-reasons-heading uppercase">Full Stack Sweden</h4>
+                                <p>
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid, iste repellat molestiae modi perferendis neque quod incidunt eligendi labore fuga provident voluptate.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-10 offset-1 offset-sm-0 col-sm-4 col-md-6">
+                        <div class="row">
+                            <div class="col-2">
+                                <i class="three-reasons-icon fa-solid fa-person-snowboarding" aria-hidden="true"></i>
+                            </div>
+                            <div class="col-10">
+                                <h4 class="three-reasons-heading uppercase">Developers International</h4>
+                                <p>
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid, iste repellat molestiae modi perferendis neque quod incidunt eligendi labore fuga provident voluptate.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-10 offset-1 offset-sm-0 col-sm-4 col-md-6">
-                <div class="row">
-                    <div class="col-2">
-                        <i class="three-reasons-icon fa fa-question" aria-hidden="true"></i>
-                    </div>
-                    <div class="col-10">
-                        <h4 class="three-reasons-heading uppercase">What do I do?</h4>
-                        <p>
-                            I'm a skilled Full Stack Developer with a wealth of diverse life and technical
-                            experience that I bring to every project.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-10 offset-1 offset-sm-0 col-sm-4 col-md-6">
-                <div class="row">
-                    <div class="col-2">
-                        <i class="three-reasons-icon fa fa-thumbs-up" aria-hidden="true"></i>
-                    </div>
-                    <div class="col-10">
-                        <h4 class="three-reasons-heading uppercase">How do I do it?</h4>
-                        <p>
-                            I follow form as well as function. I know that the aesthetics of effective design
-                            combined with application speed, security and reliability combine to create a great
-                            user experience.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-10 offset-1 offset-sm-0 col-sm-4 col-md-6">
-                <div class="row">
-                    <div class="col-2">
-                        <i class="three-reasons-icon fa fa-bolt" aria-hidden="true"></i>
-                    </div>
-                    <div class="col-10">
-                        <h4 class="three-reasons-heading uppercase">Why hire me?</h4>
-                        <p>
-                            I work quickly and effectively in getting things built and working across the stack.
-                            I'm an excellent communicator who thrives in bright and enthusiastic teams and I'm
-                            also a self starter when working solo.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+
+    </section>
     <footer class="container-fluid">
         <div class="row" id="footer-details">
             <div class="col-sm-4">
@@ -174,7 +197,22 @@
         </div>
 
     </footer>
+    <script>
+       function initMap() {
+        var map = new google.maps.Map(document.getElementById("map"), {
+            zoom: 3,
+            center: {
+                lat: 46.619261,
+                lng: -33.134766
+            }
+        });
+       }
+    </script>
     <script src="https://kit.fontawesome.com/215e1e67e2.js" crossorigin="anonymous"></script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB-16_v9-We87Ong1qZ-XiwjE7K-B2ZHcw&callback=initMap">
+    
+</script>
 </body>
 
 </html>
